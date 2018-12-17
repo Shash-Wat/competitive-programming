@@ -52,8 +52,6 @@ int fast_ex(int a,int n,int m){
 
 int zero= 0;
 
-//Inspired from : https://ideone.com/hdI5aX (on cf blog)
-
 struct node{
 	int l,r,lazy1,lazy2,hist1,hist2,leftbest,rightbest;
   node *left,*right;
