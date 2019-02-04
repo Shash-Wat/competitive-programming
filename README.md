@@ -1,4 +1,5 @@
 # competitive-programming
-solutions to cp probs,implementations
-CF : noobita
-CC : shashwatchandr
+solutions of problems,implementations
+
+- CF : noobita
+- CC : shashwatchandr
