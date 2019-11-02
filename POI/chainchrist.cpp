@@ -1,4 +1,18 @@
 /*input
+- Atmost N edges can change the answer
+- Maintain DSU parent array for each index
+- Binary search on the first position where the parents of the corresponding subarrays differ
+- Check function of binary search uses hashing 
+- X = a_i 
+  Y = b_i 
+  while(X < a_i+l_i):
+        binary search for smallest K such that  hash[X,X+K-1]  != hash[Y,Y+K-1]
+        merge(X+K-1,Y+K-1)
+        X = X+K
+        Y = Y+K
+- Maintain BIT for hashing as they keep changing , but because parent can only change Log N times, complexity is amortized
+  O(N log2 N) which fits because TLs are quite strange.
+  
 10 3
 1 6 3
 5 7 4
